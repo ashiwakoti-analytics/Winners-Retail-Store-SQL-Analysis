@@ -696,7 +696,7 @@ These insights come directly from the SQL queries in the project and demonstrate
 
 Data Analyst | SQL | Data Analytics
 
-GitHub: https://github.com/ASHIWAKOTI-eng 
+GitHub: (https://github.com/ashiwakoti-analytics)
 LinkedIn: (https://www.linkedin.com/in/a-shiwakoti-b04702238/)
 ---
 
