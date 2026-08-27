@@ -1,11 +1,8 @@
-# Winners-Retail-Store-Analysis - SQL
+# Winners Retail Sales SQL Project
 
----
-
-# <p align="center">
-  <img src="images/Winners-9-800x800.jpg" width="600">
+<p align="center">
+  <img src="images/er-diagram.png" width="700">
 </p>
-# Winners Retail Sales SQL Project  
 
 ## 📌 Project Overview
 This project demonstrates advanced SQL analytics using a simulated retail business database.  
@@ -662,33 +659,31 @@ WHERE revenue = (SELECT
 Running the SQL queries on the Winners Retail dataset revealed several actionable findings. Here are the most important ones:
 
 ### Revenue & Sales Performance
-- **Total revenue is driven heavily by specific categories** — Electronics and Clothing likely account for the largest share. 
-  → Recommendation: Allocate more inventory and promotional budget to top-performing categories to maximize profitability.
+- **Total revenue is concentrated in two categories** — Electronics ($1.17M) and Clothing ($1.10M) lead, ahead of Office & Books ($941.6K), Sports & Outdoors ($826.6K), and Home & Kitchen ($701.3K) (Problem 8: total revenue per product category).
+  → Recommendation: Allocate more inventory and promotional budget to Electronics and Clothing, which together account for over 40% of total revenue.
 
-- **Monthly revenue shows clear seasonal patterns** — Peak periods appear between October and January. January being the month with highest revenue.
-  → Recommendation: Plan staffing, stock replenishment, and marketing campaigns around identified high-revenue months (e.g., holiday seasons).
+- **Monthly revenue shows clear seasonal patterns** — January is the highest-revenue month ($482.4K), followed by November ($449.9K), December ($437.0K), and October ($424.6K) (Problem 30: month with the highest total revenue).
+  → Recommendation: Plan staffing, stock replenishment, and marketing campaigns around the October–January peak, particularly the holiday season and January.
 
 ### Product Performance
-- **Top products per category are highly concentrated** — The top 3 revenue-generating products in each category contribute disproportionately (Problem 11: top 3 revenue-generating products in each category).  
-  → Recommendation: Focus supplier negotiations and in-store placement on these high-performers.
+- **Top products per category capture a meaningful but not overwhelming share of revenue** — the top 3 products in each category account for 18.6%–27.2% of that category's revenue, highest in Home & Kitchen (27.2%) and lowest in Electronics (18.6%) (Problem 11: top 3 revenue-generating products in each category).
+  → Recommendation: Focus supplier negotiations and in-store placement on these top performers, especially in Home & Kitchen where concentration is highest.
 
-- **Best-sellers by quantity differ from revenue leaders** — High-volume items (Problem 9: top 5 best-selling products by quantity) vs. high-margin/revenue items show different priorities (Problem 13: total revenue per product).  
-  → Recommendation: Balance inventory strategy between volume drivers and profit drivers.
+- **Best-sellers by quantity differ from revenue leaders** — Portable Power Bank ranks in the top 3 by units sold but doesn't crack the top 5 by revenue, while File Folders Set is a top-5 revenue product without being a top-5 seller by quantity (Problem 9: top 5 best-selling products by quantity; Problem 13: total revenue per product).
+  → Recommendation: Balance inventory strategy between high-volume, lower-margin items and lower-volume, higher-revenue items rather than optimizing for one metric alone.
 
 ### Customer Behavior & Loyalty
-- **Significant churn risk exists** — 21.67% of customers are one-time buyers only (Problem 20: percentage of customers who placed only one order).  
+- **Meaningful churn risk exists** — 21.67% of customers have placed only one order (Problem 20: percentage of customers who placed only one order).
   → Recommendation: Implement re-engagement campaigns (discounts, emails) for one-time buyers to improve retention.
 
-- **Cross-store shopping indicates strong loyalty** — Some customers frequently purchase from multiple locations (Problem 19: customers who placed orders in more than one store).  
-  → Recommendation: Introduce chain-wide loyalty points or unified promotions to encourage and reward multi-store behavior.
+- **Cross-store shopping is common, not rare** — 391 of the 540 customers who have ordered (72.4%) have placed orders at more than one store (Problem 19: customers who placed orders in more than one store).
+  → Recommendation: Introduce chain-wide loyalty points or unified promotions, since most active customers already shop across multiple locations and would benefit from consistent cross-store rewards.
 
 ### Employee Performance
-- **Revenue contribution varies significantly** — Top 5 employees handle substantially more sales value than the average.  
-  → Recommendation: Recognize and incentivize high performers (bonuses, commissions) to motivate the team.
+- **Revenue contribution varies noticeably by employee** — the top 5 employees (of 50) each generated over $103K, led by Amelia Brown ($121.6K), Charlotte Smith ($117.2K), Olivia Miller ($108.6K), Samuel Taylor ($105.7K), and Daniel Martinez ($103.6K), together accounting for 13.42% of total revenue versus the 10% an even split would produce.
+  → Recommendation: Recognize and incentivize these top performers (bonuses, commissions) and review their approach for coaching opportunities across the team.
 
 These insights come directly from the SQL queries in the project and demonstrate how data can drive retail decisions around inventory, pricing, customer retention, and team performance.
-
----
 
 ## 👤 Author
 
@@ -696,8 +691,8 @@ These insights come directly from the SQL queries in the project and demonstrate
 
 Data Analyst | SQL | Data Analytics
 
-GitHub: (https://github.com/ashiwakoti-analytics)
-LinkedIn: (https://www.linkedin.com/in/a-shiwakoti-b04702238/)
+[LinkedIn](https://www.linkedin.com/in/a-shiwakoti-b04702238/) • [GitHub](https://github.com/ashiwakoti-analytics)
+
 ---
 
 ## ⭐ Project Purpose
