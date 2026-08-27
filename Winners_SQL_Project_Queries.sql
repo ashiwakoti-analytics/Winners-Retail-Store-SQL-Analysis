@@ -206,8 +206,8 @@ WITH category_totals AS(
 		c.categoryname,
 		p.productid,
 		p.productname,
-		SUM(o.totalamount) AS total_revenue,
-		rank() over(partition by c.CategoryID order by SUM(o.totalamount) desc) as rank_in_cat
+		SUM(od.quantity * od.unitprice * (1 - od.discount / 100)) AS total_revenue,
+		rank() over(partition by c.CategoryID order by SUM(od.quantity * od.unitprice * (1 - od.discount / 100)) desc) as rank_in_cat
 	FROM
 		products p
 			JOIN
